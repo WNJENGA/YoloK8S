@@ -16,9 +16,6 @@ Ensure that you have Minikube installed on your machine.
 
  -Access the link shared on the deployment tab on your UI. Or you can get services from your terminal to access the external IP
 
-### Known Bugs
-
-The client-server image keeps failing upon restart (CrashLoop Error) (This is a bug from how the application was developed locally, the app keeps restarting but it should work on your environment.)
 
 ### Technology used
 
