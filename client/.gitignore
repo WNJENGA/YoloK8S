@@ -1,7 +1,7 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-package-lock.json
 /node_modules
 /.pnp
 .pnp.js
@@ -18,8 +18,12 @@ package-lock.json
 .env.development.local
 .env.test.local
 .env.production.local
-.vscode
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+node_modules
+npm-debug.log
+.vs
+>>>>>>> f9f350e24593ec4646ae410592fb8bb191fdf244
