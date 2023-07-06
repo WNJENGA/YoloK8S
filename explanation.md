@@ -11,7 +11,7 @@ This project uses a local Mongo DB connection and a persistent volume . This vol
 ## Git workflow
 The Yolo app is cloned and dockerized. With the images pushed to the docker hub, the deployment files call the already stored images. The choice to have separate deployment and services is to ensure efficieny of the app.
 
-## NB (Bug alert)
+## Debugging measures applied.
 The app has a crashloop error and keeps restarting. This is a bug issue noted even when the app is run locally. This should not hinder the app from running on your environment.
 
 ## Good practices such as Docker image tag naming standards for ease of identification and personalization of images and containers.
