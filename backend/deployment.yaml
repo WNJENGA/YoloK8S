@@ -6,17 +6,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backend
+      app: backend-deployment
   template:
     metadata:
       labels:
-        app: backend
+        app: backend-deployment
     spec:
       containers:
         - name: backend
           image: wnjenga/yolo-backend:1.0.0
           ports:
-            - containerPort: 5001
+            - containerPort: 3000
         - name: backend-database
           image: mongo
           ports:
@@ -25,7 +25,7 @@ spec:
             - name: MONGO_URL
               valueFrom:
                 configMapKeyRef:
-                  name: mongo-config
+                  name: backend-config
                   key: MONGO_URL
           volumeMounts:
             - name: backend-volume
@@ -33,4 +33,4 @@ spec:
       volumes:
         - name: backend-volume
           persistentVolumeClaim:
-            claimName: mongodb-pvc
+          
