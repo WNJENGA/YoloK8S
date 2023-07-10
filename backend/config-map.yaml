@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: backend-service
-data:
-  NODE_ENV: MONGO_URL
