@@ -25,6 +25,6 @@ spec:
                   key: PORT
             - name: MONGODB_URI
               valueFrom:
-                configMapKeyRef:
-                  name: yolok8s-backend-config
+                secretKeyRef:
+                  name: yolok8s-backend-secret
                   key: MONGODB_URI
