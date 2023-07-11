@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name:  yolok8s-backend-config
+data:
+  Port: "5000"
+  MONGODB_URI: 'mongodb://admin:admin@mongo:27017'
