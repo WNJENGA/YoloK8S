@@ -1,24 +1,24 @@
-# Yolo Kubernetes Orchestration
+# Requirements
+Make sure that you have the following installed:
+- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
+- npm 
+- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
 
-## Description
+## Navigate to the Client Folder 
+ `cd client`
 
-This project uses kubernetes to orchestrate the Yolo app on a cluster and expose the app.
+## Run the folllowing command to install the dependencies 
+ `npm install`
 
-### Set up instructions
+## Run the folllowing to start the app
+ `npm start`
 
-Ensure that you have Minikube installed on your machine.
+## Open a new terminal and run the same commands in the backend folder
+ `cd ../backend`
 
- -Clone the repository.
+ `npm install`
 
- -Start Minikube on your machine
+ `npm start`
 
- -Then CD into the client and backend DIR and create the deployment, service, config YAML files
-
- -Access the link shared on the deployment tab on your UI. Or you can get services from your terminal to access the external IP
-
-
-### Technology used
-
-- YAML
-
+ ### Go ahead a nd add a product (note that the price field only takes a numeric input)
 ### License MIT License: Copyright (c) 2023
